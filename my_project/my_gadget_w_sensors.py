@@ -92,7 +92,7 @@ class MyGadget(AlexaGadget):
         # intent that was used
         payload = json.loads(directive.payload.decode("utf-8"))
         # Print out the payload
-        print("Recieved data: " + str(payload))
+        print("Received data: " + str(payload))
         # Use the person slot from the payload to call write_text()
         write_text(str(payload['data']['person']['value']))
 
@@ -104,7 +104,7 @@ class MyGadget(AlexaGadget):
         # intent that was used
         payload = json.loads(directive.payload.decode("utf-8"))
         # Print out the payload
-        print("Recieved data: " + str(payload))
+        print("Received data: " + str(payload))
         # Construct a response event to send back to Alexa using (or not using)
         # the data sent in with the payload from the directive
         # NOTE: I have constructed the cloud functions such that whatever you send
